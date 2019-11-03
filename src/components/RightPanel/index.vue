@@ -14,7 +14,6 @@
 
 <script>
 import { addClass, removeClass } from '@/utils'
-
 export default {
   name: 'RightPanel',
   props: {
@@ -94,7 +93,6 @@ export default {
   background: rgba(0, 0, 0, .2);
   z-index: -1;
 }
-
 .rightPanel {
   width: 100%;
   max-width: 260px;
@@ -108,22 +106,18 @@ export default {
   background: #fff;
   z-index: 40000;
 }
-
 .show {
   transition: all .3s cubic-bezier(.7, .3, .1, 1);
-
   .rightPanel-background {
     z-index: 20000;
     opacity: 1;
     width: 100%;
     height: 100%;
   }
-
   .rightPanel {
     transform: translate(0);
   }
 }
-
 .handle-button {
   width: 48px;
   height: 48px;

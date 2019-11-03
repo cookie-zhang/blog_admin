@@ -6,7 +6,6 @@
 
 <script>
 import screenfull from 'screenfull'
-
 export default {
   name: 'Screenfull',
   data() {

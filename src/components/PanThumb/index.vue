@@ -6,7 +6,7 @@
       </div>
     </div>
     <!-- eslint-disable-next-line -->
-    <div :style="{backgroundImage: `url(${image})`}" class="pan-thumb"></div>
+    <div :style="{backgroundImage: `url(https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif)`}" class="pan-thumb"></div>
   </div>
 </template>
 
@@ -14,10 +14,6 @@
 export default {
   name: 'PanThumb',
   props: {
-    image: {
-      type: String,
-      required: true
-    },
     zIndex: {
       type: Number,
       default: 1

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="38px" viewBox="0 0 33 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-5">
+            <path d="M0,23 L0,14 C-2.705415e-16,11.790861 1.790861,10 4,10 L15,10 L15,23 L0,23 Z M-3.55271368e-15,26 L15,26 L15,38 L4,38 C1.790861,38 2.705415e-16,36.209139 0,34 L0,26 Z M33,23 L18,23 L18,10 L29,10 C31.209139,10 33,11.790861 33,14 L33,23 Z M33,26 L33,34 C33,36.209139 31.209139,38 29,38 L18,38 L18,26 L33,26 Z" id="合并形状" fill="#BFCBD9"></path>
+            <ellipse id="椭圆形" stroke="#BFCBD9" stroke-width="3" transform="translate(11.824464, 6.577838) rotate(-139.000000) translate(-11.824464, -6.577838) " cx="11.8244641" cy="6.5778377" rx="6" ry="3.5"></ellipse>
+            <ellipse id="椭圆形" stroke="#BFCBD9" stroke-width="3" transform="translate(21.717514, 6.717514) rotate(-45.000000) translate(-21.717514, -6.717514) " cx="21.7175144" cy="6.71751442" rx="6" ry="3.5"></ellipse>
+        </g>
+    </g>
+</svg>

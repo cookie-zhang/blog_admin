@@ -1,24 +1,16 @@
 <template>
-  <div :class="{fullscreen:fullscreen}" class="tinymce-container" :style="{width:containerWidth}">
-    <textarea :id="tinymceId" class="tinymce-textarea" />
+  <div :class="{fullscreen:fullscreen}" class="tinymce-container editor-container">
+    <textarea :id="tinymceId" class="tinymce-textarea"/>
     <div class="editor-custom-btn-container">
-      <editorImage color="#1890ff" class="editor-upload-btn" @successCBK="imageSuccessCBK" />
+      <editorImage color="#1890ff" class="editor-upload-btn" @successCBK="imageSuccessCBK"/>
     </div>
   </div>
 </template>
 
 <script>
-/**
- * docs:
- * https://panjiachen.github.io/vue-element-admin-site/feature/component/rich-editor.html#tinymce
- */
-import editorImage from './components/EditorImage'
+import editorImage from './components/editorImage'
 import plugins from './plugins'
 import toolbar from './toolbar'
-import load from './dynamicLoadScript'
-
-// why use this cdn, detail see https://github.com/PanJiaChen/tinymce-all-in-one
-const tinymceCDN = 'https://cdn.jsdelivr.net/npm/tinymce-all-in-one@4.9.3/tinymce.min.js'
 
 export default {
   name: 'Tinymce',
@@ -46,14 +38,9 @@ export default {
       default: 'file edit insert view format table'
     },
     height: {
-      type: [Number, String],
+      type: Number,
       required: false,
       default: 360
-    },
-    width: {
-      type: [Number, String],
-      required: false,
-      default: 'auto'
     }
   },
   data() {
@@ -64,19 +51,13 @@ export default {
       fullscreen: false,
       languageTypeList: {
         'en': 'en',
-        'zh': 'zh_CN',
-        'es': 'es_MX',
-        'ja': 'ja'
+        'zh': 'zh_CN'
       }
     }
   },
   computed: {
-    containerWidth() {
-      const width = this.width
-      if (/^[\d]+(\.[\d]+)?$/.test(width)) { // matches `100`, `'100'`
-        return `${width}px`
-      }
-      return width
+    language() {
+      return this.languageTypeList['zh']
     }
   },
   watch: {
@@ -85,15 +66,17 @@ export default {
         this.$nextTick(() =>
           window.tinymce.get(this.tinymceId).setContent(val || ''))
       }
+    },
+    language() {
+      this.destroyTinymce()
+      this.$nextTick(() => this.initTinymce())
     }
   },
   mounted() {
-    this.init()
+    this.initTinymce()
   },
   activated() {
-    if (window.tinymce) {
-      this.initTinymce()
-    }
+    this.initTinymce()
   },
   deactivated() {
     this.destroyTinymce()
@@ -102,21 +85,11 @@ export default {
     this.destroyTinymce()
   },
   methods: {
-    init() {
-      // dynamic load tinymce from cdn
-      load(tinymceCDN, (err) => {
-        if (err) {
-          this.$message.error(err.message)
-          return
-        }
-        this.initTinymce()
-      })
-    },
     initTinymce() {
       const _this = this
       window.tinymce.init({
+        language: this.language,
         selector: `#${this.tinymceId}`,
-        language: this.languageTypeList['en'],
         height: this.height,
         body_class: 'panel-body ',
         object_resizing: false,
@@ -184,13 +157,8 @@ export default {
       })
     },
     destroyTinymce() {
-      const tinymce = window.tinymce.get(this.tinymceId)
-      if (this.fullscreen) {
-        tinymce.execCommand('mceFullScreen')
-      }
-
-      if (tinymce) {
-        tinymce.destroy()
+      if (window.tinymce.get(this.tinymceId)) {
+        window.tinymce.get(this.tinymceId).destroy()
       }
     },
     setContent(value) {
@@ -212,7 +180,6 @@ export default {
 <style scoped>
 .tinymce-container {
   position: relative;
-  line-height: normal;
 }
 .tinymce-container>>>.mce-fullscreen {
   z-index: 10000;

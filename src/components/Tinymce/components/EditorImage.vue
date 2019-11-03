@@ -1,7 +1,6 @@
 <template>
   <div class="upload-container">
-    <el-button :style="{background:color,borderColor:color}" icon="el-icon-upload" size="mini" type="primary" @click=" dialogVisible=true">
-      upload
+    <el-button :style="{background:color,borderColor:color}" icon="el-icon-upload" size="mini" type="primary" @click=" dialogVisible=true">上传图片
     </el-button>
     <el-dialog :visible.sync="dialogVisible">
       <el-upload
@@ -13,18 +12,11 @@
         :before-upload="beforeUpload"
         class="editor-slide-upload"
         action="https://httpbin.org/post"
-        list-type="picture-card"
-      >
-        <el-button size="small" type="primary">
-          Click upload
-        </el-button>
+        list-type="picture-card">
+        <el-button size="small" type="primary">点击上传</el-button>
       </el-upload>
-      <el-button @click="dialogVisible = false">
-        Cancel
-      </el-button>
-      <el-button type="primary" @click="handleSubmit">
-        Confirm
-      </el-button>
+      <el-button @click="dialogVisible = false">取 消</el-button>
+      <el-button type="primary" @click="handleSubmit">确 定</el-button>
     </el-dialog>
   </div>
 </template>
@@ -54,7 +46,7 @@ export default {
     handleSubmit() {
       const arr = Object.keys(this.listObj).map(v => this.listObj[v])
       if (!this.checkAllSuccess()) {
-        this.$message('Please wait for all images to be uploaded successfully. If there is a network problem, please refresh the page and upload again!')
+        this.$message('请等待所有图片上传成功 或 出现了网络问题，请刷新页面重新上传！')
         return
       }
       this.$emit('successCBK', arr)
@@ -101,7 +93,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style rel="stylesheet/scss" lang="scss" scoped>
 .editor-slide-upload {
   margin-bottom: 20px;
   /deep/ .el-upload--picture-card {

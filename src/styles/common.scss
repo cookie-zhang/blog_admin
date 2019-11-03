@@ -1,0 +1,154 @@
+.container{
+.importants {
+    position: relative;
+  }
+  .importants:after {
+    content: "*";
+    position: absolute;
+    left: -14px;
+    top: 3px;
+    color: #f4a024;
+  }
+  .el-button--small,
+  .el-button--small.is-round {
+    height: 32px;
+  }
+  .el-cascader--small {
+    line-height: 32px;
+  }
+
+  .fl {
+    display: inline-block;
+  }
+  .fr {
+    float: right;
+  }
+  .el-input--small .el-input__inner {
+    height: 32px;
+    line-height: 32px;
+  }
+  .ml20 {
+    margin-left: 20px;
+  }
+  .reds {
+    color: #f56c6c;
+  }
+  .w-120 {
+    width: 120px;
+  }
+  .mr20 {
+    margin-right: 20px;
+  }
+  .width280 {
+    width: 280px;
+  }
+  .width360 {
+    width: 360px;
+  }
+  .search-box {
+    width: 100%;
+    height: 32px;
+    margin-top: 29px;
+  }
+  .select-box {
+    width: 100%;
+  }
+  .select-box > div {
+    margin-top: 19px;
+  }
+  .main-titles {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #e4e7ed;
+    font-size: 16px;
+    line-height: 60px;
+    text-indent: 20px;
+  }
+  .labels {
+    width: 90px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    font-size: 12px;
+    color: #606266;
+  }
+  .tables-box {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-top: 29px;
+  }
+  .tables-box .el-button--small,
+  .tables-box .el-button--small.is-round {
+    width: auto;
+    height: auto;
+  }
+  .el-table th {
+    background-color: #f5f7fa;
+  }
+  .el-table tr {
+    background-color: #ffffff;
+  }
+  .el-table__row.el-table__row--striped {
+    background-color: #fafcff;
+  }
+  .el-dropdown-link.el-dropdown-selfdefine {
+    font-size: 12px !important;
+    color: #0095e8 !important;
+    margin-left: 26px !important;
+  }
+  .pages {
+    width: calc(100% - 40px);
+    margin: 28px 20px 0 20px;
+  }
+  .tips {
+    font-size: 14px;
+    color: #c0c4cc;
+  }
+  .select-house {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .select-house .select-span {
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    text-align: left;
+    font-size: 14px;
+    color: #606266;
+    line-height: 32px;
+  }
+  .warning {
+    position: relative;
+  }
+  .select-house .warning:after {
+    content: "!";
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ffbc2e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    position: absolute;
+    left: -20px;
+    top: 12px;
+  }
+  .el-range-editor--small.el-input__inner {
+      height: 32px;
+  }
+  .inline-block {
+      display: inline-block;
+  }
+  .el-button--warning {
+    color: #fff;
+    background-color: #F29801;
+    border-color: #F29801;
+    &:hover {
+        background-color: rgb(245, 171, 45);
+        border-color: rgb(245, 171, 45);
+    }
+  }
+
+}

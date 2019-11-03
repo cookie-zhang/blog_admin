@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="36px" viewBox="0 0 38 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>合并形状</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,0 L27.9434415,0 L38,8.30794805 L38,32 C38,34.209139 36.209139,36 34,36 L4,36 C1.790861,36 2.705415e-16,34.209139 0,32 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z M26,12 L37,12 L26,2 L26,12 Z M7.5,17 C6.67157288,17 6,17.6715729 6,18.5 C6,19.3284271 6.67157288,20 7.5,20 L21.5,20 C22.3284271,20 23,19.3284271 23,18.5 C23,17.6715729 22.3284271,17 21.5,17 L7.5,17 Z M7.5,25 C6.67157288,25 6,25.6715729 6,26.5 C6,27.3284271 6.67157288,28 7.5,28 L30.5,28 C31.3284271,28 32,27.3284271 32,26.5 C32,25.6715729 31.3284271,25 30.5,25 L7.5,25 Z" id="合并形状" fill="#BFCBD9"></path>
+    </g>
+</svg>

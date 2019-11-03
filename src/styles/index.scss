@@ -4,6 +4,7 @@
 @import './element-ui.scss';
 @import './sidebar.scss';
 @import './btn.scss';
+@import './common.scss';
 
 body {
   height: 100%;
@@ -21,7 +22,18 @@ html {
   height: 100%;
   box-sizing: border-box;
 }
-
+ul,li{
+  margin:0;
+  padding:0;
+}
+li,ol{
+  list-style: none;
+}
+h4{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
 #app {
   height: 100%;
 }
@@ -188,4 +200,50 @@ aside {
 
 .multiselect--active {
   z-index: 1000 !important;
+}
+
+// xgplayer 
+.xgplayer-skin-default .xgplayer-controls {
+  background-image: none !important;
+  background: #333333 !important;
+}
+.xgplayer-skin-default .xgplayer-progress {
+  left: 0 !important;
+  right: 0 !important;
+}
+.xgplayer-skin-default .xgplayer-controls {
+  bottom: -1px !important;
+  // display: -webkit-flex !important;
+  // display: -moz-box !important;
+  // display: flex !important;
+}
+.xgplayer-skin-default .xgplayer-play-img .xgplayer-icon, .xgplayer-skin-default .xgplayer-play .xgplayer-icon {
+  margin-right: 20px !important;
+}
+.xgplayer-skin-default .xgplayer-volume {
+  margin-right: 10px !important;
+}
+.xgplayer-skin-default .xgplayer-playbackrate {
+  width: 40px !important;
+  margin-right: 20px !important;
+}
+.xgplayer-skin-default .xgplayer-definition {
+  width: 40px !important;
+  margin-right: 20px !important;
+}
+.xgplayer-skin-default .xgplayer-volume {
+  width: 20px !important;
+}
+.xgplayer-skin-default .xgplayer-definition .name {
+  background: transparent !important;
+  color: #999999 !important;
+}
+.xgplayer-skin-default .xgplayer-playbackrate .name {
+  background: transparent !important;
+  color: #999999 !important;
+  line-height: 23px !important;
+  font-size: 14px !important;
+}
+.xgplayer-skin-default .xgplayer-icon {
+  fill: #999999 !important;
 }
