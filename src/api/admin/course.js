@@ -83,7 +83,3 @@ export function getColumnOptionList(data) {
     data
   })
 }
-
-
-
-
