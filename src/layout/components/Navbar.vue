@@ -7,7 +7,7 @@
     <div class="right-menu">
       <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
         <div class="avatar-wrapper">
-          <img src="http://47.104.191.170/imgs/vue1.jpg" class="user-avatar">
+          <img src="http://cookiezhang.com/imgs/vue1.jpg" class="user-avatar">
           <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown">

@@ -23,7 +23,7 @@ export const articleManagements = {
     },
     {
       path: '/admin/createArticle',
-      name: 'createCourse',
+      name: 'createArticle',
       hidden: true,
       component: () => import('@/views/admin/articleManagements/createArticle'),
       meta: { title: '新建文章' }
