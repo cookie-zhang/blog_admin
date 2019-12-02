@@ -124,6 +124,7 @@ export default {
     },
 
 
+    
     // 富文本
     editorMethods(){
        this.editor = new E(this.$refs.editor)

@@ -42,7 +42,7 @@ export default {
   .detail-box {
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 100;
     .detail-container {
       padding: 20px;
       width: 80%;

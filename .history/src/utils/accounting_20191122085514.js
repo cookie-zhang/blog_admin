@@ -6,5 +6,5 @@ import accounting from 'accounting'
 
 // 保留两位小数，展示千分位
 export function handleMoney(money) {
-  return accounting.formatMoney(money, '')
+  return accounting.formatMoney(money,'')
 }
