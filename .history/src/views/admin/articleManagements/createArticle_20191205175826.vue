@@ -76,7 +76,7 @@ export default {
         like:0,
         looks:0,
         createDate: 0,
-        updateDate: 0
+        updateDate: ''
       },
       curarticleType: '',
       sortOptions: [],

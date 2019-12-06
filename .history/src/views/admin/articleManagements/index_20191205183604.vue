@@ -186,12 +186,12 @@ export default {
       }).then(() => {
         let postData = { id }
         deletearticle(postData).then(res => {
+          if (res.meta.code === '200') {
             this.$message({
               type: 'success',
               message: '删除成功'
             })
-          
-          this.getArticleList()
+          }
         })
       })
     },

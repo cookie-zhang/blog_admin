@@ -28,11 +28,6 @@ export function updatearticle(data) {
     data
   })
 }
-export function deletearticle(data) {
-  return request({
-    url: '/deletearticle',
-    method: 'POST',
-    data
-  })
-}
+
+/data/deletearticle
 

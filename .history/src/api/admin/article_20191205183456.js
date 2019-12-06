@@ -35,4 +35,5 @@ export function deletearticle(data) {
     data
   })
 }
+/data/deletearticle
 

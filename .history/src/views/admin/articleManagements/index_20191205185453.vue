@@ -186,12 +186,13 @@ export default {
       }).then(() => {
         let postData = { id }
         deletearticle(postData).then(res => {
+         
             this.$message({
               type: 'success',
               message: '删除成功'
             })
           
-          this.getArticleList()
+          this.getCourseList()
         })
       })
     },

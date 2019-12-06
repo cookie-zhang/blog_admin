@@ -64,10 +64,10 @@ export default {
       articleInfo: {
         id:'',
         sort: '', //文章分类
-        sortName: '',
+        sortName: null,
         isOriginal: 1,
-        type: '',//文章类型
-        typeName: '',//文章类型
+        type: null,//文章类型
+        typeName: null,//文章类型
         coverImg: '',//文章封面
         author: '',//文章作者
         title: '', //文章标题
@@ -75,8 +75,8 @@ export default {
         content: '',//文章内容
         like:0,
         looks:0,
-        createDate: 0,
-        updateDate: 0
+        createDate: null,
+        updateDate: null
       },
       curarticleType: '',
       sortOptions: [],

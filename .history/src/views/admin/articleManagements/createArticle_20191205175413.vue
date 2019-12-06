@@ -75,8 +75,8 @@ export default {
         content: '',//文章内容
         like:0,
         looks:0,
-        createDate: 0,
-        updateDate: 0
+        createDate: '',
+        updateDate: ''
       },
       curarticleType: '',
       sortOptions: [],

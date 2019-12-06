@@ -184,14 +184,14 @@ export default {
         cancelButtonText: '取消',
         type: 'warning'
       }).then(() => {
-        let postData = { id }
+        let postData = { courseId }
         deletearticle(postData).then(res => {
+          if (res.meta.code === '200') {
             this.$message({
               type: 'success',
               message: '删除成功'
             })
-          
-          this.getArticleList()
+          }
         })
       })
     },

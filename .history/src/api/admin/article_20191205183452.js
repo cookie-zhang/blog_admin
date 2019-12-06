@@ -30,9 +30,10 @@ export function updatearticle(data) {
 }
 export function deletearticle(data) {
   return request({
-    url: '/deletearticle',
+    url: '/updatearticle',
     method: 'POST',
     data
   })
 }
+/data/deletearticle
 
